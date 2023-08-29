@@ -1,0 +1,26 @@
+{
+  "name": "m3-theme-builder",
+  "version": "1.2.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "microbundle --jsx React.createElement --jsxFragment React.Fragment --jsxImportSource react",
+    "dev": "microbundle watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "microbundle": "^0.15.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "source": "src/index.js",
+  "main": "dist/m3.js",
+  "module": "dist/m3.module.js",
+  "unpkg": "dist/m3.umd.js"
+}

@@ -1,0 +1,2 @@
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?t(exports,require("react"),require("react/jsx-runtime")):"function"==typeof define&&define.amd?define(["exports","react","react/jsx-runtime"],t):t((e||self).m3ThemeBuilder={},e.react,e.jsxRuntime)}(this,function(e,t,n){e.Hola=function(){var e=t.useState(),i=e[0],r=e[1];return t.useEffect(function(){r(5)},[]),/*#__PURE__*/n.jsx("div",{children:i})}});
+//# sourceMappingURL=m3.umd.js.map
