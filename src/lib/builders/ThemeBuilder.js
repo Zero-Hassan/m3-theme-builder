@@ -1,7 +1,7 @@
 import BuildThemeColors from "./colorsBuilder"
 
 
-export default function ThemeBuilder({colors={}}){
+export  function ThemeBuilder({colors={}}){
 return {
     colors:BuildThemeColors(colors)
 }

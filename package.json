@@ -1,6 +1,6 @@
 {
   "name": "m3-theme-builder",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -22,5 +22,8 @@
   "source": "src/index.js",
   "main": "dist/m3.js",
   "module": "dist/m3.module.js",
-  "unpkg": "dist/m3.umd.js"
+  "unpkg": "dist/m3.umd.js",
+  "dependencies": {
+    "styled-components": "^6.0.7"
+  }
 }
