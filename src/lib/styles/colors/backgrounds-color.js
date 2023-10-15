@@ -3,7 +3,7 @@ import { css } from "styled-components";
 const bgColor=(theme,key)=>theme.colors&& theme.colors[key]?`background-color:${theme.colors[key]};`:'';
 
 export const Primary=css`${({theme})=> bgColor(theme,'primaryBg')}`;
-export const primaryContainer=css`${({theme})=> bgColor(theme,'primaryContainerBg')}`;
+export const PrimaryContainer=css`${({theme})=> bgColor(theme,'primaryContainerBg')}`;
 export const Secondary=css`${({theme})=> bgColor(theme,'secondaryBg')}`;
 export const SecondaryContainer=css`${({theme})=> bgColor(theme,'secondaryContainerBg')}`;
 export const Tertiary=css`${({theme})=> bgColor(theme,'tertiaryBg')}`;
@@ -17,4 +17,5 @@ export const SurfaceContainer=css`${({theme})=> bgColor(theme,'surfaceContainerB
 export const SurfaceContainerLowest=css`${({theme})=> bgColor(theme,'surfaceContainerLowestBg')}`;
 export const SurfaceContainerLow=css`${({theme})=> bgColor(theme,'surfaceContainerLowBg')}`;
 export const SurfaceContainerHighest=css`${({theme})=> bgColor(theme,'surfaceContainerHighestBg')}`;
-export const SurfaceContaineHighr=css`${({theme})=> bgColor(theme,'surfaceContainerHighBg')}`;
+export const SurfaceContaineHigher=css`${({theme})=> bgColor(theme,'surfaceContainerHighBg')}`;
+export const background_mixin=(key)=>css`${({theme})=> bgColor(theme,key)}`;
