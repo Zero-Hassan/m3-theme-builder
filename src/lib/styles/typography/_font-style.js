@@ -5,7 +5,9 @@ const parseValue=(value,root_element_size)=>{
     const unit=value.trimEnd().substr(-2);
   const valueInt= Number(value.replace(unit,''));
  
-  
+ root_element_size = root_element_size || window.getComputedStyle(document.getElementsByTagName("html")[0]).getPropertyValue('font-size').replace("px","") || 16;
+
+ console.log(root_element_size,"====>",window.getComputedStyle(document.getElementsByTagName("html")[0]).getPropertyValue('font-size')); 
 
   if(typeof valueInt== NaN) throw new Error("The value unit must be px,pt or rem");
   switch (unit) {
@@ -21,7 +23,6 @@ const parseValue=(value,root_element_size)=>{
 
 }
 export default function fontStyle(themeFonts,displayType,displaySize){
-    console.log(displayType,displaySize);
     const {size,weight,spacing,height}=themeFonts[displayType][displaySize];
     const {family,rootElementSize}=themeFonts;
     return `font-size:${parseValue(size,rootElementSize)}rem;
