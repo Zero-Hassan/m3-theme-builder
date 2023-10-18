@@ -7,8 +7,6 @@ const parseValue=(value,root_element_size)=>{
  
  root_element_size = root_element_size || window.getComputedStyle(document.getElementsByTagName("html")[0]).getPropertyValue('font-size').replace("px","") || 16;
 
- console.log(root_element_size,"====>",window.getComputedStyle(document.getElementsByTagName("html")[0]).getPropertyValue('font-size')); 
-
   if(typeof valueInt== NaN) throw new Error("The value unit must be px,pt or rem");
   switch (unit) {
     case "px":
